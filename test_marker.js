@@ -78,11 +78,18 @@ function createIconSet(farbe) {
 	iconSize: [18, 18],
 	iconAnchor: [9, 9],
 	popupAnchor: [ 0, 0],
-    });	
+    });
+    var KrankenhausIcon = L.icon({
+        iconUrl: 'iconFarben/hospital'+farbe+'.png', 
+        iconSize: [18, 18],
+        iconAnchor: [9, 9],
+        popupAnchor: [ 0, 0],    
+    });         
     var iconSet = {
         'Kita':KitaIcon,
         'Schule':SchulIcon,
-        'Altenheim':AltenheimIcon
+        'Altenheim':AltenheimIcon,
+        'Krankenhaus': KrankenhausIcon
     };
     return iconSet;
 }
